@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TRAVEL DESIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f072e4021a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="showcase ">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle "></div>
+        </header>
+        <video src="pexels-fearless-dreams-5598973.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+        <div class="text">
+        <h2>LIFE IS SHORT</h2>
+        <h3>AND WORLD IS WIDE</h3>
+        <p>Jobs fill your pockets, adventures fill your soul <br>Travel is the only thing you buy that makes you richer <br>Remember that happiness is a way of travel, not a destination.</p>
+
+         <a href="#">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="facebook.png" width="50"></a></li>
+            <li><a href="#"><img src="twitter.png" width="50"></a></li>
+            <li><a href="#"><img src="instagram.png" width="50"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><i class="fas fa-home"></i><a href="#"> Home</a></li>
+            <li><i class="far fa-newspaper"></i><a href="#"> News</a></li>
+            <li><i class="fas fa-map-marker-alt"></i><a href="#"> Destinations</a></li>
+            <li><i class="fas fa-blog"></i><a href="#"> Blog</a></li>
+            <li><i class="far fa-address-card"></i><a href="#"> Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle= document.querySelector('.toggle')
+        const showcase= document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',() => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+
+</body>
